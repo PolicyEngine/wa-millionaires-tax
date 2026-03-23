@@ -17,7 +17,7 @@ const SITE_URL = 'https://policyengine.org/us/wa-millionaires-tax';
 export const metadata: Metadata = {
   title: "WA Millionaires' Tax Calculator",
   description:
-    "Calculate your personal tax impact under Washington State SB 6346, the Millionaires' Tax — a 9.9% surtax on household income over $1 million.",
+    "Calculate your personal tax impact under Washington State SB 6346, using the live PolicyEngine reform for Washington taxable income above the bill's $1 million standard deduction.",
   metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: SITE_URL,
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "WA Millionaires' Tax Calculator",
     description:
-      "Calculate your personal tax impact under Washington State SB 6346, the Millionaires' Tax — a 9.9% surtax on household income over $1 million.",
+      "Calculate your personal tax impact under Washington State SB 6346, using the live PolicyEngine reform for Washington taxable income above the bill's $1 million standard deduction.",
     url: SITE_URL,
     siteName: 'PolicyEngine',
     type: 'website',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "WA Millionaires' Tax Calculator",
     description:
-      "Calculate your personal tax impact under Washington State SB 6346, the Millionaires' Tax.",
+      "Calculate your personal tax impact under Washington State SB 6346 using the live PolicyEngine reform.",
   },
   other: {
     'theme-color': '#2C7A7B',
