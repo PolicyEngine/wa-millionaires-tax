@@ -9,7 +9,9 @@ export default function ShellLayout({
   return (
     <>
       <Header />
-      {children}
+      <main id="main-content" role="main">
+        {children}
+      </main>
       <Footer />
     </>
   );
