@@ -8,6 +8,11 @@ const nextConfig = {
   output: "standalone",
   poweredByHeader: false,
   compress: true,
+  // Pin the workspace root so Turbopack does not pick up a stray lockfile from
+  // a parent directory.
+  turbopack: {
+    root: process.cwd(),
+  },
   async headers() {
     return [
       {
