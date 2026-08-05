@@ -83,7 +83,7 @@ def calculate_aggregate_impact(year: int = 2028, dataset: str | None = None) -> 
 
     # Poverty (unchanged by this reform — affects only very high earners)
     pov_bl = sim.calculate("in_poverty", period=year, map_to="person")
-    poverty_baseline_rate = float(np.array(pov_bl).mean() * 100)
+    poverty_baseline_rate = float(pov_bl.mean() * 100)
 
     age_arr = np.array(sim.calculate("age", period=year))
     pw_arr = np.array(sim.calculate("person_weight", period=year))
